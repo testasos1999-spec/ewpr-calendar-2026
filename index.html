@@ -4,7 +4,6 @@
 <head>
 
 <link rel="manifest" href="manifest.json">
-
 <link rel="apple-touch-icon" href="Logo.png">
 
 <meta charset="UTF-8">
@@ -14,82 +13,9 @@
 
 <meta name="theme-color" content="#053957">
 
-<style>
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background: #053957;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.container {
-    text-align: center;
-    padding: 40px;
-}
-
-.logo {
-    width: 70px;
-    height: auto;
-    margin-bottom: 20px;
-}
-}
-
-h1 {
-    font-size: 34px;
-    margin-bottom: 15px;
-}
-
-p {
-    font-size: 18px;
-    opacity: 0.85;
-    margin-bottom: 35px;
-}
-
-button {
-    background: white;
-    color: #053957;
-    border: none;
-    padding: 18px 45px;
-    border-radius: 18px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-button:hover {
-    transform: scale(1.05);
-}
-
-</style>
-
 </head>
 
 <body>
-
-<div class="container">
-
-<img src="Logo.png" class="logo" alt="شعار المكتب">
-
-<h1>التقويم السنوي 2026</h1>
-
-<p>التقويم الداخلي للمكتب</p>
-
-<button onclick="openCalendar()">
-فتح التقويم
-</button>
-
-</div>
-
 
 <script>
 
@@ -97,12 +23,8 @@ if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("service-worker.js");
 }
 
-function openCalendar() {
-
 window.location.href =
 "https://ewpr.drive.deem.sa/s/WWoJtWdGSPbZXmT?dir=/&editing=false&openfile=true";
-
-}
 
 </script>
 
